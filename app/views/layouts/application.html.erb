@@ -23,6 +23,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="min-h-full">
+      <%= render 'shared/navbar' %>
+
+      <div class="py-10">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
