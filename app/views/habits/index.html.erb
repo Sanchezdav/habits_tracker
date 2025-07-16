@@ -1,0 +1,38 @@
+<header>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="md:flex md:items-center md:justify-between">
+      <div class="min-w-0 flex-1">
+        <h2 class="text-2xl/7 font-bold text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
+          Habits Tracker
+        </h2>
+      </div>
+      <div class="mt-4 flex md:mt-0 md:ml-4">
+        <button type="button" class="ml-3 inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add a habit</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <% if @habits.any? %>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start">
+        <% @habits.each do |habit| %>
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-right">
+              <%= frequency_badge(habit) %>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900"><%= habit.title %></h3>
+            <% if habit.description.present? %>
+              <p class="text-sm text-gray-400"><%= habit.description %></p>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <button type="button" class="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center hover:border-gray-400 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">
+        <p class="mx-auto text-4xl text-gray-400">⏱️</p>
+        <span class="mt-2 block text-sm font-semibold text-gray-900">Add a habit</span>
+      </button>
+    <% end %>
+  </div>
+</main>
