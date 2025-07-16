@@ -21,7 +21,11 @@
             <div class="text-right">
               <%= frequency_badge(habit) %>
             </div>
-            <h3 class="text-lg font-semibold text-gray-900"><%= habit.title %></h3>
+            <h3 class="text-lg font-semibold text-gray-900">
+              <%= link_to habit_path(habit), class: "underline" do %>
+                <%= habit.title %>
+              <% end %>
+            </h3>
             <% if habit.description.present? %>
               <p class="text-sm text-gray-400"><%= habit.description %></p>
             <% end %>
