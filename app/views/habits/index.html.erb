@@ -7,7 +7,12 @@
         </h2>
       </div>
       <div class="mt-4 flex md:mt-0 md:ml-4">
-        <button type="button" class="ml-3 inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add a habit</button>
+        <%= link_to new_habit_path, class: "inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" do %>
+          <span>Add a habit</span>
+          <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5v10m5-5H5" />
+          </svg>
+        <% end %>
       </div>
     </div>
   </div>
@@ -27,7 +32,9 @@
               <% end %>
             </h3>
             <% if habit.description.present? %>
-              <p class="text-sm text-gray-400"><%= habit.description %></p>
+              <p class="text-sm text-gray-400">
+                <%= habit.description.to_plain_text.truncate(50) %>
+              </p>
             <% end %>
           </div>
         <% end %>

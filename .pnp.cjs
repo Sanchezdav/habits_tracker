@@ -29,9 +29,11 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@hotwired/stimulus", "npm:3.2.2"],\
           ["@hotwired/turbo-rails", "npm:8.0.16"],\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:8.0.200"],\
           ["@tailwindcss/cli", "npm:4.1.11"],\
           ["esbuild", "npm:0.25.6"],\
-          ["tailwindcss", "npm:4.1.11"]\
+          ["tailwindcss", "npm:4.1.11"],\
+          ["trix", "npm:2.1.15"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -613,6 +615,39 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@rails/actiontext", [\
+      ["npm:8.0.200", {\
+        "packageLocation": "../../../.yarn/berry/cache/@rails-actiontext-npm-8.0.200-9132c7c125-10c0.zip/node_modules/@rails/actiontext/",\
+        "packageDependencies": [\
+          ["@rails/actiontext", "npm:8.0.200"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:8.0.200", {\
+        "packageLocation": "./.yarn/__virtual__/@rails-actiontext-virtual-8bb533ef46/4/.yarn/berry/cache/@rails-actiontext-npm-8.0.200-9132c7c125-10c0.zip/node_modules/@rails/actiontext/",\
+        "packageDependencies": [\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:8.0.200"],\
+          ["@rails/activestorage", "npm:8.0.200"],\
+          ["@types/trix", null],\
+          ["trix", "npm:2.1.15"]\
+        ],\
+        "packagePeers": [\
+          "@types/trix",\
+          "trix"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@rails/activestorage", [\
+      ["npm:8.0.200", {\
+        "packageLocation": "../../../.yarn/berry/cache/@rails-activestorage-npm-8.0.200-651960d94e-10c0.zip/node_modules/@rails/activestorage/",\
+        "packageDependencies": [\
+          ["@rails/activestorage", "npm:8.0.200"],\
+          ["spark-md5", "npm:3.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@tailwindcss/cli", [\
       ["npm:4.1.11", {\
         "packageLocation": "../../../.yarn/berry/cache/@tailwindcss-cli-npm-4.1.11-c32d6bc9ea-10c0.zip/node_modules/@tailwindcss/cli/",\
@@ -800,6 +835,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/trusted-types", [\
+      ["npm:2.0.7", {\
+        "packageLocation": "../../../.yarn/berry/cache/@types-trusted-types-npm-2.0.7-a07fc44f59-10c0.zip/node_modules/@types/trusted-types/",\
+        "packageDependencies": [\
+          ["@types/trusted-types", "npm:2.0.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["abbrev", [\
       ["npm:3.0.1", {\
         "packageLocation": "../../../.yarn/berry/cache/abbrev-npm-3.0.1-a34d600e50-10c0.zip/node_modules/abbrev/",\
@@ -858,9 +902,11 @@ const RAW_RUNTIME_STATE =
           ["app", "workspace:."],\
           ["@hotwired/stimulus", "npm:3.2.2"],\
           ["@hotwired/turbo-rails", "npm:8.0.16"],\
+          ["@rails/actiontext", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:8.0.200"],\
           ["@tailwindcss/cli", "npm:4.1.11"],\
           ["esbuild", "npm:0.25.6"],\
-          ["tailwindcss", "npm:4.1.11"]\
+          ["tailwindcss", "npm:4.1.11"],\
+          ["trix", "npm:2.1.15"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -990,6 +1036,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/detect-libc-npm-2.0.4-e8a2aba8b6-10c0.zip/node_modules/detect-libc/",\
         "packageDependencies": [\
           ["detect-libc", "npm:2.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["dompurify", [\
+      ["npm:3.2.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/dompurify-npm-3.2.6-8d2a7542b7-10c0.zip/node_modules/dompurify/",\
+        "packageDependencies": [\
+          ["dompurify", "npm:3.2.6"],\
+          ["@types/trusted-types", "npm:2.0.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1826,6 +1882,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["spark-md5", [\
+      ["npm:3.0.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/spark-md5-npm-3.0.2-1983a5b179-10c0.zip/node_modules/spark-md5/",\
+        "packageDependencies": [\
+          ["spark-md5", "npm:3.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["sprintf-js", [\
       ["npm:1.1.3", {\
         "packageLocation": "../../../.yarn/berry/cache/sprintf-js-npm-1.1.3-b99efd75b2-10c0.zip/node_modules/sprintf-js/",\
@@ -1935,6 +2000,16 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["to-regex-range", "npm:5.0.1"],\
           ["is-number", "npm:7.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["trix", [\
+      ["npm:2.1.15", {\
+        "packageLocation": "../../../.yarn/berry/cache/trix-npm-2.1.15-355485137e-10c0.zip/node_modules/trix/",\
+        "packageDependencies": [\
+          ["trix", "npm:2.1.15"],\
+          ["dompurify", "npm:3.2.6"]\
         ],\
         "linkType": "HARD"\
       }]\

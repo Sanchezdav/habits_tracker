@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "habits#index"
 
-  resources :habits, only: [ :show ]
+  resources :habits, only: [ :index, :show, :new, :create ]
 end
