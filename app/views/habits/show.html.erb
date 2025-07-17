@@ -2,12 +2,17 @@
   <div class="mb-3">
     <%= link_to "< Back to Habits", root_path, class: "text-indigo-600 hover:text-indigo-900 underline" %>
   </div>
-  <div class="flex items-center justify-between">
-    <h1 class="font-bold text-3xl text-gray-900">
-      <%= @habit.title %>
-    </h1>
+  <div class="flex items-start justify-between">
     <div>
+      <h1 class="font-bold text-3xl text-gray-900 mb-3">
+        <%= @habit.title %>
+      </h1>
       <%= frequency_badge(@habit) %>
+    </div>
+    <div>
+      <%= link_to edit_habit_path(@habit), class: "inline-flex items-center rounded-md bg-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" do %>
+        <span>Edit habit</span>
+      <% end %>
     </div>
   </div>
   <div class="mt-4">
