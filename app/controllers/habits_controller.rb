@@ -1,5 +1,5 @@
 class HabitsController < ApplicationController
-  before_action :set_habit, only: [ :show, :edit, :update ]
+  before_action :set_habit, only: [ :show, :edit, :update, :destroy ]
 
   def index
     @habits = Habit.all
@@ -17,7 +17,7 @@ class HabitsController < ApplicationController
 
     if @habit.save
       respond_to do |format|
-        format.html { redirect_to root_path, notice: "Habit was successfully created." }
+        format.html { redirect_to habit_path(@habit), notice: "Habit was successfully created." }
       end
     else
       respond_to do |format|
@@ -38,6 +38,14 @@ class HabitsController < ApplicationController
       respond_to do |format|
         format.html { render :edit, status: :unprocessable_entity }
       end
+    end
+  end
+
+  def destroy
+    @habit.destroy
+
+    respond_to do |format|
+      format.html { redirect_to root_path, notice: "Habit was successfully deleted." }
     end
   end
 
