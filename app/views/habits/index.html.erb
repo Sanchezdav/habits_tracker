@@ -24,7 +24,7 @@
         <% @habits.each do |habit| %>
           <div class="bg-white shadow-lg rounded-lg p-6">
             <div class="text-right">
-              <%= frequency_badge(habit) %>
+              <%= frequency_badge(habit) if habit.frequency.present? %>
             </div>
             <h3 class="text-lg font-semibold text-gray-900">
               <%= link_to habit_path(habit), class: "underline" do %>

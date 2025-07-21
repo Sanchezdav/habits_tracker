@@ -2,7 +2,7 @@
   <div>
     <% if habit.errors.any? %>
       <div class="mb-4">
-        <ul class="list-disc pl-5 text-red-600">
+        <ul id="habit-errors-list" class="list-disc pl-5 text-red-600">
           <% habit.errors.full_messages.each do |message| %>
             <li><%= message %></li>
           <% end %>

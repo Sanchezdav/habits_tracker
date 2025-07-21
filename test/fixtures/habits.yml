@@ -1,11 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
-  frequency: MyString
+daily:
+  title: Run every morning
+  description: This is a habit to run every morning.
+  frequency: daily
 
-two:
-  title: MyString
-  description: MyText
-  frequency: MyString
+monthly:
+  title: Pay the credit card
+  description: This is about paying the credit card.
+  frequency: monthly
+
+without_frequency:
+  title: No frequency habit
+  description: This habit does not have a frequency set.
