@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "habits#index"
 
-  resources :habits
+  resources :habits do
+    resources :completions, only: [ :create ]
+  end
 end
