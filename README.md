@@ -1,24 +1,26 @@
-# README
+# Habits Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a small habits tracker application for a workshop
 
-Things you may want to cover:
+## Stack
 
-* Ruby version
+- Ruby 3.3.5
+- Rails 8.0.2
+- Nodejs 22.15.1
+- SQLite
 
-* System dependencies
+## Getting started
 
-* Configuration
+This apps was created using `asdf`, so the `.tool-versions` file is defined in the root, to install the dependencies run `asdf install`. Once you have Ruby and Node installed, the next step is to install the Rails project dependencies:
 
-* Database creation
+```shell
+> bundle install
+```
 
-* Database initialization
+After installing the project dependencies, the last step is to load the DB schema to create all the database structure we have defined in `db/schema.rb` with the following command:
 
-* How to run the test suite
+```shell
+> rails db:schema:load
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Once the installation and setup process is finished, run the application with `bin/dev`.
