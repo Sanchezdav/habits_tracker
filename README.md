@@ -24,3 +24,9 @@ After installing the project dependencies, the last step is to load the DB schem
 ```
 
 Once the installation and setup process is finished, run the application with `bin/dev`.
+
+## Screenshots
+
+**Dashboard**
+
+![Habits Tracker Dashboard](https://github.com/user-attachments/assets/12842123-7eeb-4bf8-9438-a6f07e53e706)
