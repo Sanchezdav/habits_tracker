@@ -33,12 +33,16 @@ Once the installation and setup process is finished, run the application with `b
 
 **Habit Show View**
 
-![Habits Tracker Dashboard](https://github.com/user-attachments/assets/8c1f4fb5-ff7f-462d-a275-a7867223edb0)
+![Habit Show View](https://github.com/user-attachments/assets/8c1f4fb5-ff7f-462d-a275-a7867223edb0)
 
 **Habit Edit View**
 
-![Habits Tracker Dashboard](https://github.com/user-attachments/assets/0ee18a9e-4914-432c-a64e-3ebe41481932)
+![Habit Edit View](https://github.com/user-attachments/assets/0ee18a9e-4914-432c-a64e-3ebe41481932)
 
-**Nwe Habit View**
+**New Habit View**
 
-![Habits Tracker Dashboard](https://github.com/user-attachments/assets/c58c89dd-c44e-422b-b7d9-29b24a1737de)
+![New Habit View](https://github.com/user-attachments/assets/c58c89dd-c44e-422b-b7d9-29b24a1737de)
+
+**Habits API**
+
+![Habits API](https://github.com/user-attachments/assets/cf73b7d8-3052-4192-a0c9-2c681b0729cd)
